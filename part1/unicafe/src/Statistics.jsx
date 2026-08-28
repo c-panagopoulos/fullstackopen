@@ -1,4 +1,13 @@
 const Statistics = (props) => {
+
+  if (props.history === 0) {
+    return (
+      <div>
+        <p>No feedback given</p>
+      </div>
+    )
+  }
+
   return (
   <>
     <p>good {props.good}</p>
